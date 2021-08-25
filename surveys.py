@@ -4,6 +4,7 @@ class Question:
     def __init__(self, question, choices=None, allow_text=False):
         """Create question (assume Yes/No for choices."""
 
+        # if choices is falsy
         if not choices:
             choices = ["Yes", "No"]
 
@@ -22,6 +23,9 @@ class Survey:
         self.instructions = instructions
         self.questions = questions
 
+# title = "Customer Satisfaction Survey"
+# instructions = "Please fill out a survey about your experience with us."
+# questions =  [ Question list ]
 
 satisfaction_survey = Survey(
     "Customer Satisfaction Survey",
